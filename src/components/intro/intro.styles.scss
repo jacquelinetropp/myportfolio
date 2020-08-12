@@ -1,0 +1,16 @@
+.greeting {
+  background-image: url(../../images/background.jpg);
+  height: 100%;
+  padding: 0 5rem;
+
+  &__title {
+    font-size: 150px;
+    margin-top: 0;
+    color: #78559e;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}

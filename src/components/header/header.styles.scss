@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-image: url(../../images/background.jpg);
+}
+
+.navigation {
+}
+
+.menu {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.menu-item {
+  padding: 15px;
+  color: #252626;
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  &:hover {
+    background-color: #8deef0;
+  }
+}
