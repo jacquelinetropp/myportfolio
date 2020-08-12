@@ -14,6 +14,7 @@ import mongodb from "../../images/mongodb.png";
 import wordpress from "../../images/wordpress.png";
 import graphql from "../../images/graphql.png";
 import sass from "../../images/sass.png";
+import materialui from "../../images/materialui.png";
 
 import "./skills.styles.scss";
 
@@ -33,6 +34,7 @@ const Skills = () => (
     <SkillsCard image={wordpress} text="Wordpress" />
     <SkillsCard image={graphql} text="GraphQL" />
     <SkillsCard image={sass} text="Sass" />
+    <SkillsCard image={materialui} text="Material UI" />
   </div>
 );
 
