@@ -1,0 +1,31 @@
+.img {
+  width: 300px;
+}
+
+.education {
+  padding: 0.5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .title {
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}

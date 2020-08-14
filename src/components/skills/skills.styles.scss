@@ -1,20 +1,55 @@
 .skills {
-  padding: 0 5rem;
+  padding: 0 2rem 1rem 2rem;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  justify-content: center;
 
-  h2 {
+  h4 {
     grid-column: 1/-1;
+    text-align: center;
+    font-family: "Red Rose", cursive;
+    font-size: 30px;
+
+    // &:before,
+    // &:after {
+    //   background-color: #000;
+    //   content: "";
+    //   display: inline-block;
+    //   height: 1px;
+    //   position: relative;
+    //   vertical-align: middle;
+    //   width: 25%;
+    //   margin: 0 15px;
+
+    //   @media only screen and (max-width: 961 px) {
+    //     width: 18%;
+    //   }
+
+    //   @media only screen and (max-width: 761 px) {
+    //     width: 12%;
+    //   }
+
+    //   @media only screen and (max-width: 425 px) {
+    //     width: 5%;
+    //   }
+    // }
+
+    // &:before {
+    //   margin-left: -50%;
+    // }
+    // &:after {
+    //   margin-right: -50%;
+    // }
   }
 }
 
 .flip-card {
   background-color: transparent;
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   perspective: 1000px;
-  margin: 1.5rem;
+  margin: 1rem;
+  justify-self: center;
 }
 
 .flip-card-inner {
@@ -49,6 +84,10 @@
 .flip-card-front {
   background-color: rgb(225, 225, 225);
   color: black;
+
+  .img {
+    width: 70px;
+  }
 }
 
 .flip-card-back {
@@ -64,8 +103,8 @@
   }
 }
 .flip-card-outer {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   background-image: url(../../images//background.jpg);
   position: absolute;
   top: -10px;

@@ -20,21 +20,24 @@ import "./skills.styles.scss";
 
 const Skills = () => (
   <div className="skills">
-    <h2>Technical Skills</h2>
+    <h4>Technical Skills</h4>
+
     <SkillsCard image={js} text="Javascript" />
     <SkillsCard image={css} text="CSS3" />
     <SkillsCard image={html} text="HTML5" />
-    <SkillsCard image={firebase} text="Firebase" />
-    <SkillsCard image={heroku} text="Heroku" />
-    <SkillsCard image={git} text="Git" />
-    <SkillsCard image={node} text="NodeJS" />
     <SkillsCard image={jquery} text="JQuery" />
     <SkillsCard image={react} text="React" />
-    <SkillsCard image={mongodb} text="MongoDB" />
     <SkillsCard image={wordpress} text="Wordpress" />
-    <SkillsCard image={graphql} text="GraphQL" />
     <SkillsCard image={sass} text="Sass" />
     <SkillsCard image={materialui} text="Material UI" />
+
+    <SkillsCard image={firebase} text="Firebase" />
+    <SkillsCard image={node} text="NodeJS" />
+    <SkillsCard image={mongodb} text="MongoDB" />
+    <SkillsCard image={graphql} text="GraphQL" />
+
+    <SkillsCard image={heroku} text="Heroku" />
+    <SkillsCard image={git} text="Git" />
   </div>
 );
 

@@ -1,12 +1,19 @@
 .greeting {
   background-image: url(../../images/background.jpg);
+
   height: 100%;
   padding: 0 5rem;
+  padding-bottom: 5rem;
 
   &__title {
-    font-size: 150px;
+    font-size: 100px;
     margin-top: 0;
     color: #78559e;
+    font-family: "Red Rose", cursive;
+
+    @media only screen and (max-width: 425 px) {
+      font-size: 40px;
+    }
   }
 }
 
