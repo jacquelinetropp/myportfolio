@@ -3,6 +3,7 @@ import Intro from "../components/intro/Intro";
 import Skills from "../components/skills/skills";
 import Education from "../components/education/education";
 import Services from "../components/services/services";
+import Projects from "../components/projects/projects";
 
 const Home = () => (
   <Fragment>
@@ -10,6 +11,7 @@ const Home = () => (
     <Education />
     <Skills id="skills" />
     <Services />
+    <Projects />
   </Fragment>
 );
 

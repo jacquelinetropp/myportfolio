@@ -1,19 +1,21 @@
 import React from "react";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 import "./header.styles.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => (
   <div className="header">
     <div className="navigation">
       <ul className="menu">
         <li className="menu-item">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li className="menu-item">
-          <a href="/">Education</a>
+          <NavLink to="/#education">Education</NavLink>
         </li>
         <li className="menu-item">
-          <a href="/">Services</a>
+          <NavLink to="/#services">Services</NavLink>
         </li>
         <li className="menu-item">
           <a href="/">Projects</a>

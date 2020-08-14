@@ -3,7 +3,7 @@ import React from "react";
 import "./services.styles.scss";
 
 const Services = () => (
-  <div className="services">
+  <div className="services" id="services">
     <div className="background">
       <h2>Services</h2>
 

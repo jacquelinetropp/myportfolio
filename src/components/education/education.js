@@ -5,7 +5,7 @@ import img from "../../images/student.png";
 import "./education.styles.scss";
 
 const Education = () => (
-  <div className="education">
+  <div className="education" id="education">
     <h2>Education</h2>
     <img src={img} alt="Graduate" className="img" />
     <div className="section">
