@@ -10,6 +10,7 @@
     margin-top: 0;
     color: #78559e;
     font-family: "Red Rose", cursive;
+    animation: moveInRight 1s ease-out;
 
     @media only screen and (max-width: 425 px) {
       font-size: 40px;
@@ -21,8 +22,72 @@
   display: flex;
   justify-content: space-around;
 
+  &__info {
+    animation: moveInRight1 1s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+
+  &__title {
+    animation: moveInLeft 1s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+
   h6 {
     font-size: 18px;
     margin-bottom: 10px;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight1 {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
   }
 }

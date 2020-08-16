@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Project from "./project";
 
 import firebase from "../../images/firebase.png";
@@ -12,35 +12,52 @@ import wordpress from "../../images/wordpress.png";
 import graphql from "../../images/graphql.png";
 import sass from "../../images/sass.png";
 import materialui from "../../images/materialui.png";
+import express from "../../images/express.svg";
 
 import services from "../../images/services.jpg";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import "./projects.styles.scss";
-const Projects = () => (
-  <div className="projects" id="projects">
-    <h2>Projects</h2>
-    <Project
-      title="Backpacking Buddies"
-      img={services}
-      symbols={[react, materialui, firebase, node]}
-      link={"https://google.com"}
-    />
-    <Project
-      title="Personal Blog"
-      img={services}
-      symbols={[wordpress, sass, jquery]}
-    />
-    <Project
-      title="React E-Commerce"
-      img={services}
-      symbols={[react, firebase]}
-    />
-    <Project
-      title="Wordpress E-Commerce"
-      img={services}
-      symbols={[wordpress, jquery, sass]}
-    />
-  </div>
-);
+const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
+  return (
+    <div className="projects" id="projects">
+      <h2>Projects</h2>
+      <div data-aos="fade">
+        <Project
+          title="Backpacking Buddies"
+          img={services}
+          symbols={[react, materialui, firebase, node, express]}
+          link={"https://google.com"}
+        />
+      </div>
+      <div data-aos="fade">
+        <Project
+          title="Personal Blog"
+          img={services}
+          symbols={[wordpress, sass, jquery]}
+        />
+      </div>
+      <div data-aos="fade">
+        <Project
+          title="React E-Commerce"
+          img={services}
+          symbols={[react, firebase]}
+        />
+      </div>
+      <div data-aos="fade">
+        <Project
+          title="Wordpress E-Commerce"
+          img={services}
+          symbols={[wordpress, jquery, sass]}
+        />
+      </div>
+    </div>
+  );
+};
 
 export default Projects;

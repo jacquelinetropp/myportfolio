@@ -10,6 +10,7 @@
   .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
     .title {
       font-weight: bold;
       margin-right: 12px;

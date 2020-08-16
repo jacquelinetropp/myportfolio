@@ -8,6 +8,7 @@ const Intro = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div className="greeting">
       <h1 className="greeting__title">Hello, I'm Jacqueline Tropp</h1>
@@ -20,7 +21,11 @@ const Intro = () => {
             Using innovation and the latest technology to build creative modern
             websites
           </h6>
-          <p>A paragraph that goes into what I do and why I do it</p>
+          <p>
+            Utilizing the latest trends and techologies, I craft customized
+            websites for companies and individuals. I am currently seeking a
+            front-end team to be a part of.
+          </p>
         </div>
       </div>
     </div>
