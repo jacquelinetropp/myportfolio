@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./projects.styles.scss";
 
 const Project = ({ img, title, symbols, link }) => (
-  <Link to={link}>
+  <Link to={link} className="projectslink">
     <div className="project">
       <img src={img} alt="Project screenshot" />
 
