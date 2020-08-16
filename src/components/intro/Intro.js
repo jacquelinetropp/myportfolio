@@ -13,10 +13,13 @@ const Intro = () => {
       <h1 className="greeting__title">Hello, I'm Jacqueline Tropp</h1>
       <div className="intro">
         <div className="intro__title">
-          <p>Front-End Developer</p>
+          <h6>Front-End Developer</h6>
         </div>
         <div className="intro__info">
-          <h6>A title that explains the types of websites I build</h6>
+          <h6>
+            Using innovation and the latest technology to build creative modern
+            websites
+          </h6>
           <p>A paragraph that goes into what I do and why I do it</p>
         </div>
       </div>

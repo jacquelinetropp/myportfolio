@@ -9,37 +9,6 @@
     text-align: center;
     font-family: "Red Rose", cursive;
     font-size: 30px;
-
-    // &:before,
-    // &:after {
-    //   background-color: #000;
-    //   content: "";
-    //   display: inline-block;
-    //   height: 1px;
-    //   position: relative;
-    //   vertical-align: middle;
-    //   width: 25%;
-    //   margin: 0 15px;
-
-    //   @media only screen and (max-width: 961 px) {
-    //     width: 18%;
-    //   }
-
-    //   @media only screen and (max-width: 761 px) {
-    //     width: 12%;
-    //   }
-
-    //   @media only screen and (max-width: 425 px) {
-    //     width: 5%;
-    //   }
-    // }
-
-    // &:before {
-    //   margin-left: -50%;
-    // }
-    // &:after {
-    //   margin-right: -50%;
-    // }
   }
 }
 
@@ -99,7 +68,7 @@
 
   p {
     color: #0da39d;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .flip-card-outer {

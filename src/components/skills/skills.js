@@ -15,6 +15,9 @@ import wordpress from "../../images/wordpress.png";
 import graphql from "../../images/graphql.png";
 import sass from "../../images/sass.png";
 import materialui from "../../images/materialui.png";
+import photoshop from "../../images/photoshop.png";
+import lightroom from "../../images/lightroom.png";
+import premiere from "../../images/premiere.png";
 
 import "./skills.styles.scss";
 
@@ -38,6 +41,10 @@ const Skills = () => (
 
     <SkillsCard image={heroku} text="Heroku" />
     <SkillsCard image={git} text="Git" />
+
+    <SkillsCard image={photoshop} text="Photoshop" />
+    <SkillsCard image={lightroom} text="Lightroom" />
+    <SkillsCard image={premiere} text="Premiere" />
   </div>
 );
 

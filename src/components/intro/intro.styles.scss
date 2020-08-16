@@ -20,4 +20,9 @@
 .intro {
   display: flex;
   justify-content: space-around;
+
+  h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
