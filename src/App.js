@@ -6,6 +6,7 @@ import Header from "./components/header/header";
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route to="/" component={Home} />
       </Switch>
+   
     </Fragment>
   );
 }

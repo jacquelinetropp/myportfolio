@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 10px;
   background-image: url(../../images/background.jpg);
 }
@@ -8,6 +8,12 @@
 .navigation {
 }
 
+.logobox {
+  float: left;
+  img {
+    width: 100px;
+  }
+}
 .menu {
   list-style: none;
   text-decoration: none;

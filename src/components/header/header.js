@@ -1,11 +1,15 @@
 import React from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
+import logo from "../../images/blacklogo.png";
 
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => (
   <div className="header">
+    <div className="logobox">
+      <img src={logo} alt="Logo" />
+    </div>
     <div className="navigation">
       <ul className="menu">
         <li className="menu-item">
