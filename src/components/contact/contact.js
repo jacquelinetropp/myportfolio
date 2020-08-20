@@ -1,93 +1,128 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import FormInput from "../form/form";
+import React from "react";
+import * as emailjs from "emailjs-com";
 
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Axios from "axios";
+import {
+  Field,
+  Label,
+  Control,
+  Input,
+  Button,
+  Icon,
+  Textarea,
+  Notification,
+} from "rbx";
 
-import "./contact.styles.scss";
-
-class ContactPage extends React.Component {
+class ContactForm extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       name: "",
       email: "",
+      subject: "",
       message: "",
-      disabled: false,
-      emailSent: null,
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.resetForm = this.resetForm.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange = (event) => {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
-
-    this.setState({
-      [name]: value,
-    });
-  };
-
-  handleSubmit = (event) => {
+  handleSubmit(event) {
     event.preventDefault();
+    const { name, email, subject, message } = this.state;
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "/*YOUR NAME OR COMPANY*/",
+      subject,
+      message_html: message,
+    };
+    emailjs.send(
+      "gmail",
+      "template_G8Ys4S3B",
+      templateParams,
+      "user_XaBslOmnrGhx7hvUmamIT"
+    );
+    this.resetForm();
+  }
 
-    console.log(event.target);
-
+  resetForm() {
     this.setState({
-      disabled: true,
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
+  }
 
-    Axios.post("http://localhost:3030/api/email", this.state)
-      .then((res) => {
-        if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true,
-          });
-        } else {
-          this.setState({
-            disabled: false,
-            emailSent: false,
-          });
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-
-        this.setState({
-          disabled: false,
-          emailSent: false,
-        });
-      });
-  };
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
 
   render() {
+    const { name, email, subject, message, sentMessage } = this.state;
+
     return (
-      <div>
-        <Form onSubmit={this.handleSubmit}>
-          <FormInput name="email" type="email" label="email" required />
+      <form onSubmit={this.handleSubmit}>
+        <Field>
+          <Label>Name</Label>
+          <Control>
+            <Input
+              name="name"
+              type="text"
+              placeholder="Your first and last name"
+              value={name}
+              onChange={this.handleChange}
+            />
+          </Control>
+        </Field>
+        <Field>
+          <Label>Email for contact</Label>
+          <Control>
+            <Input
+              name="email"
+              type="email"
+              placeholder="email@gmail.com"
+              value={email}
+              onChange={this.handleChange}
+            />
+          </Control>
+        </Field>
+        <Field>
+          <Label>Subject</Label>
+          <Control>
+            <Input
+              name="subject"
+              type="text"
+              placeholder="What is the subject?"
+              value={subject}
+              onChange={this.handleChange}
+            />
+          </Control>
+        </Field>
+        <Field>
+          <Label>Message</Label>
+          <Control>
+            <Textarea
+              name="message"
+              placeholder="Tell me more about..."
+              value={message}
+              onChange={this.handleChange}
+            />
+          </Control>
+        </Field>
 
-          <Button
-            className="d-inline-block"
-            variant="primary"
-            type="submit"
-            disabled={this.state.disabled}
-          >
-            Send
-          </Button>
-
-          {this.state.emailSent === true && (
-            <p className="d-inline success-msg">Email Sent</p>
-          )}
-          {this.state.emailSent === false && (
-            <p className="d-inline err-msg">Email Not Sent</p>
-          )}
-        </Form>
-      </div>
+        <Field kind="group">
+          <Control>
+            <Button color="dark">Send</Button>
+          </Control>
+          <Control>
+            <Button text>Cancel</Button>
+          </Control>
+        </Field>
+      </form>
     );
   }
 }
 
-export default ContactPage;
+export default ContactForm;

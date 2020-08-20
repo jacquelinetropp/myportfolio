@@ -21,12 +21,10 @@ const Services = () => {
                 <ion-icon name="briefcase-outline"></ion-icon>
               </div>
             </div>
-            <h4>My Mission</h4>
+            <h4>Customization</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              iaculis ligula sed vulputate lacinia. Ut turpis enim, porttitor at
-              enim eu, efficitur imperdiet magna. Vestibulum magna est,
-              efficitur eu massa.
+              Websites are customized to each client's needs in order to help
+              drive in new customers and maintain old ones.
             </p>
           </div>
           <div className="item" data-aos="fade-left" data-aos-delay="500">
@@ -35,12 +33,10 @@ const Services = () => {
                 <ion-icon name="desktop-outline"></ion-icon>
               </div>
             </div>
-            <h4>What I Do</h4>
+            <h4>Responsive Design</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              iaculis ligula sed vulputate lacinia. Ut turpis enim, porttitor at
-              enim eu, efficitur imperdiet magna. Vestibulum magna est,
-              efficitur eu massa.
+              Websites are built with the clients in mind. Websites will
+              seamelessly transition between mobile and desktop desigins.
             </p>
           </div>
           <div className="item" data-aos="fade-left" data-aos-delay="1000">
