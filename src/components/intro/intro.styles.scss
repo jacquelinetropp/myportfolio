@@ -12,8 +12,8 @@
     font-family: "Red Rose", cursive;
     animation: moveInRight 1s ease-out;
 
-    @media only screen and (max-width: 425 px) {
-      font-size: 40px;
+    @media only screen and (max-width: 600px) {
+      font-size: 60px;
     }
   }
 }
@@ -22,11 +22,19 @@
   display: flex;
   justify-content: space-around;
 
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
   &__info {
     animation: moveInRight1 1s ease-out;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     visibility: hidden;
+
+    @media only screen and (max-width: 600px) {
+      margin-top: -30px;
+    }
   }
 
   &__title {

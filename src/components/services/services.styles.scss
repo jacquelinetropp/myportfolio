@@ -8,6 +8,10 @@
     ),
     url("../../images/services.jpg");
   background-size: cover;
+
+  @media only screen and (max-width: 550px) {
+    padding: 1.5rem;
+  }
 }
 
 .background {
@@ -20,6 +24,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   padding: 0 2rem;
+
+  @media only screen and (max-width: 550px) {
+    grid-gap: 1rem;
+  }
 }
 
 .item {
@@ -37,6 +45,14 @@
 
 ion-icon {
   font-size: 50px;
+
+  @media only screen and (max-width: 550px) {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .icon {
@@ -46,6 +62,11 @@ ion-icon {
   width: 110px;
   align-self: center;
   position: relative;
+
+  @media only screen and (max-width: 550px) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .circle {
@@ -62,6 +83,11 @@ ion-icon {
   position: absolute;
   top: 10px;
   left: 10px;
+
+  @media only screen and (max-width: 550px) {
+    width: 60px;
+    height: 60px;
+  }
 
   &:hover {
     box-shadow: 0 0 0 10px rgba(15, 186, 180, 0.2);

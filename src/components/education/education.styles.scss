@@ -1,11 +1,19 @@
 .img {
   width: 300px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .education {
   padding: 0.5rem 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 600px) {
+    padding: 0.5rem 1rem;
+  }
 
   .section {
     display: grid;
