@@ -1,3 +1,57 @@
 .contact {
-  background-color: #b3b8bb;
+  background-color: #252626;
+  padding: 1rem 3rem;
+}
+
+.contactbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact_form {
+  width: 80%;
+  overflow: hidden;
+}
+
+.textarea {
+  width: 250px;
+  color: #0fbab4;
+  background-color: none;
+}
+
+.formbox {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.textbox {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    margin: 0.3rem;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+
+  ion-icon {
+    font-size: 20px;
+  }
+}
+
+.copyright {
+  color: white;
+  text-align: center;
 }

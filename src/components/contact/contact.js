@@ -1,5 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import * as emailjs from "emailjs-com";
+
+import FormInput from "../form/form";
+
+import "./contact.styles.scss";
 
 import {
   Field,
@@ -29,20 +33,23 @@ class ContactForm extends React.PureComponent {
 
   handleSubmit(event) {
     event.preventDefault();
-    const { name, email, subject, message } = this.state;
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: "/*YOUR NAME OR COMPANY*/",
-      subject,
-      message_html: message,
-    };
-    emailjs.send(
-      "gmail",
-      "template_G8Ys4S3B",
-      templateParams,
-      "user_XaBslOmnrGhx7hvUmamIT"
-    );
+
+    emailjs
+      .sendForm(
+        "jacquelinetropp_gmail_com",
+        "contactform",
+        "contact_form",
+        "user_XaBslOmnrGhx7hvUmamIT"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     this.resetForm();
   }
 
@@ -63,64 +70,76 @@ class ContactForm extends React.PureComponent {
     const { name, email, subject, message, sentMessage } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <Field>
-          <Label>Name</Label>
-          <Control>
-            <Input
-              name="name"
-              type="text"
-              placeholder="Your first and last name"
-              value={name}
-              onChange={this.handleChange}
-            />
-          </Control>
-        </Field>
-        <Field>
-          <Label>Email for contact</Label>
-          <Control>
-            <Input
-              name="email"
-              type="email"
-              placeholder="email@gmail.com"
-              value={email}
-              onChange={this.handleChange}
-            />
-          </Control>
-        </Field>
-        <Field>
-          <Label>Subject</Label>
-          <Control>
-            <Input
-              name="subject"
-              type="text"
-              placeholder="What is the subject?"
-              value={subject}
-              onChange={this.handleChange}
-            />
-          </Control>
-        </Field>
-        <Field>
-          <Label>Message</Label>
-          <Control>
-            <Textarea
-              name="message"
-              placeholder="Tell me more about..."
-              value={message}
-              onChange={this.handleChange}
-            />
-          </Control>
-        </Field>
+      <Fragment>
+        <div className="contact">
+          <h2>Let's Talk!</h2>
+          <div className="contactbox">
+            <div className="formbox">
+              <form onSubmit={this.handleSubmit} id="contact_form">
+                <FormInput
+                  name="name"
+                  type="text"
+                  handleChange={this.handleChange}
+                  value={name}
+                  label="Name"
+                  required
+                />
+                <FormInput
+                  name="email"
+                  type="email"
+                  handleChange={this.handleChange}
+                  value={email}
+                  label="Email"
+                  required
+                />
+                <FormInput
+                  name="subject"
+                  type="text"
+                  handleChange={this.handleChange}
+                  value={subject}
+                  label="Subject"
+                  required
+                />
 
-        <Field kind="group">
-          <Control>
-            <Button color="dark">Send</Button>
-          </Control>
-          <Control>
-            <Button text>Cancel</Button>
-          </Control>
-        </Field>
-      </form>
+                <Field>
+                  <Control>
+                    <Textarea
+                      name="message"
+                      value={message}
+                      onChange={this.handleChange}
+                      placeholder="message"
+                    />
+                  </Control>
+                </Field>
+
+                <Field kind="group">
+                  <Control>
+                    <Button color="dark">Send</Button>
+                  </Control>
+                </Field>
+              </form>
+            </div>
+            <div className="textbox">
+              <p>
+                If you have any comments, questions, or business inquiries
+                please contact me. You should get a response within 24 hours.
+              </p>
+              <div className="info">
+                <ion-icon name="location-outline"></ion-icon>
+                <h4>Jacqueline Tropp - Chicago</h4>
+              </div>
+              <div className="info">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <h4>jacquelinetropp@gmail.com</h4>
+              </div>
+            </div>
+          </div>
+          <div className="copyright">
+            <p>Ⓒ Jacqueline Tropp | 2020</p>
+          </div>
+        </div>
+      </Fragment>
     );
   }
 }
