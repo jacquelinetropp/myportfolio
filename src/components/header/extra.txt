@@ -1,0 +1,66 @@
+<div className="header">
+  <div className="logobox">
+    <img src={logo} alt="Logo" />
+  </div>
+  <div className="navigation">
+    <button onClick={this.Toggle} className="toggle">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+    <ul className="menu">
+      <li className="menu-item">
+        <Link to="/">Home</Link>
+      </li>
+      <li className="menu-item">
+        <NavLink to="/#education">Education</NavLink>
+      </li>
+      <li className="menu-item">
+        <NavLink to="/#services">Services</NavLink>
+      </li>
+      <li className="menu-item">
+        <a href="/">Projects</a>
+      </li>
+      <li className="menu-item">
+        <a href="/">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</div>;
+
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 10px;
+//   background-image: url(../../images/background.jpg);
+// }
+
+// .navigation {
+// }
+
+// .logobox {
+//   float: left;
+//   img {
+//     width: 100px;
+//   }
+// }
+// .menu {
+//   list-style: none;
+//   text-decoration: none;
+//   display: flex;
+// }
+
+// .menu-item {
+//   padding: 15px;
+//   color: #252626;
+//   a {
+//     text-decoration: none;
+//     color: #252626;
+
+//     &:visited {
+//       color: inherit;
+//     }
+//   }
+
+//   &:hover {
+//     background-color: #0fbab4;
+//   }
+// }

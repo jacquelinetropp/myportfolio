@@ -5,6 +5,10 @@
   padding: 0 5rem;
   padding-bottom: 5rem;
 
+  @media only screen and (max-width: 768px) {
+    padding: 0 3.5rem;
+  }
+
   &__title {
     font-size: 100px;
     margin-top: 0;
@@ -12,8 +16,14 @@
     font-family: "Red Rose", cursive;
     animation: moveInRight 1s ease-out;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       font-size: 60px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 40px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -22,7 +32,7 @@
   display: flex;
   justify-content: space-around;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 
@@ -32,7 +42,7 @@
     animation-fill-mode: forwards;
     visibility: hidden;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       margin-top: -30px;
     }
   }
@@ -42,6 +52,7 @@
     animation-delay: 1s;
     animation-fill-mode: forwards;
     visibility: hidden;
+    margin-right: 1rem;
   }
 
   h6 {
