@@ -9,6 +9,10 @@
     padding: 0 3.5rem;
   }
 
+  @media only screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+
   &__title {
     font-size: 100px;
     margin-top: 0;
@@ -22,7 +26,7 @@
     }
 
     @media only screen and (max-width: 450px) {
-      font-size: 40px;
+      font-size: 50px;
       margin-bottom: 0px;
     }
   }
