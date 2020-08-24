@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   justify-content: center;
+  overflow: hidden;
 
   h4 {
     grid-column: 1/-1;

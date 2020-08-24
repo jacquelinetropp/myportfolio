@@ -16,6 +16,7 @@
   padding: 0.5rem 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 
   @media only screen and (max-width: 768px) {
     padding: 0.5rem 1rem;
