@@ -32,7 +32,7 @@ const Projects = () => {
           title="Backpacking Buddies"
           img={services}
           symbols={[react, materialui, firebase, node, express]}
-          link={"https://google.com"}
+          link={"/backpacking-buddies"}
         />
       </div>
       <div data-aos="fade">
@@ -40,6 +40,7 @@ const Projects = () => {
           title="Personal Blog"
           img={services}
           symbols={[wordpress, sass, jquery]}
+          link={"/backpacking-buddies"}
         />
       </div>
       <div data-aos="fade">
@@ -47,6 +48,7 @@ const Projects = () => {
           title="React E-Commerce"
           img={services}
           symbols={[react, firebase]}
+          link={"/backpacking-buddies"}
         />
       </div>
       <div data-aos="fade">
@@ -54,6 +56,7 @@ const Projects = () => {
           title="Wordpress E-Commerce"
           img={services}
           symbols={[wordpress, jquery, sass]}
+          link={"/backpacking-buddies"}
         />
       </div>
     </div>

@@ -1,0 +1,119 @@
+.portfolioPage {
+  &__title {
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #78559e;
+    font-family: "Red Rose", cursive;
+    animation: moveInRight 1s ease-out;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 60px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__intro {
+    background-image: url(../../images/background.jpg);
+    padding: 1rem;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__title {
+      animation: moveInRight1 1s ease-out;
+      animation-fill-mode: forwards;
+      visibility: hidden;
+      margin-right: 1rem;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 10px;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 15px;
+       
+      }
+    }
+  }
+
+  .techs {
+    img {
+      width: 50px;
+      padding: 10px;
+
+      @media only screen and (max-width: 768px) {
+        width: 40px;
+      }
+
+      @media only screen and (max-width: 450px) {
+        width: 30px;
+      }
+  
+    }
+  }
+
+  .content {
+    margin: 0 auto;
+    text-align: center;
+
+    .mainImg {
+      width: 70vw;
+      margin: 10px 0;
+    }
+
+    .breakdown {
+      background-color: rgba(120, 85, 156, 0.6);
+      padding: 2rem 0;
+
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  .highlight {
+
+    h2 {
+      line-height: 1;
+    }
+    &__text {
+      padding: .5rem 3rem;
+      @media only screen and (max-width: 768px) {
+        padding: .5rem 2rem;
+      }
+      @media only screen and (max-width: 450px) {
+        padding: .5rem 1rem;
+      }
+  }
+  }
+
+  .a__button {
+    background-color: rgba(15, 186, 180, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #252626;
+    border-radius: 3px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: rgba(15, 186, 180, 0.8);
+      transform: scale(1.1);
+    }
+  }
+}
