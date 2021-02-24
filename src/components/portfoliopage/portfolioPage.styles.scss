@@ -1,4 +1,25 @@
 .portfolioPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__overview {
+    justify-self: center;
+    padding: 1rem;
+    @media only screen and (max-width: 768px) {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+    }
+  }
+
+  &__info {
+    padding: 1rem;
+    @media only screen and (max-width: 768px) {
+      grid-row: 3/4;
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+  }
+
   &__title {
     font-size: 100px;
     margin-top: 0;
@@ -10,6 +31,7 @@
     @media only screen and (max-width: 768px) {
       font-size: 60px;
       margin-bottom: 0px;
+      grid-row: 1/2;
     }
 
     @media only screen and (max-width: 450px) {
@@ -21,8 +43,10 @@
   &__intro {
     background-image: url(../../images/background.jpg);
     padding: 1rem;
+    grid-column: 1/-1;
 
     @media only screen and (max-width: 768px) {
+      grid-row: 1/2;
       flex-direction: column;
     }
 
@@ -39,7 +63,6 @@
 
       @media only screen and (max-width: 450px) {
         font-size: 15px;
-       
       }
     }
   }
@@ -56,7 +79,6 @@
       @media only screen and (max-width: 450px) {
         width: 30px;
       }
-  
     }
   }
 
@@ -80,19 +102,18 @@
   }
 
   .highlight {
-
     h2 {
       line-height: 1;
     }
     &__text {
-      padding: .5rem 3rem;
+      padding: 0.5rem 3rem;
       @media only screen and (max-width: 768px) {
-        padding: .5rem 2rem;
+        padding: 0.5rem 2rem;
       }
       @media only screen and (max-width: 450px) {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
       }
-  }
+    }
   }
 
   .a__button {

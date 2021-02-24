@@ -15,6 +15,8 @@ import materialui from "../../images/materialui.png";
 import express from "../../images/express.svg";
 
 import services from "../../images/services.jpg";
+import dfa from "../../images/1200dfa.png";
+import blog from "../../images/1200blog.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -37,15 +39,15 @@ const Projects = () => {
       </div>
       <div data-aos="fade">
         <Project
-          title="Personal Blog"
-          img={services}
+          title="DFA Vaccine Toolkit"
+          img={dfa}
           symbols={[wordpress, sass, jquery]}
           link={"/backpacking-buddies"}
         />
       </div>
       <div data-aos="fade">
         <Project
-          title="React E-Commerce"
+          title="Planner App"
           img={services}
           symbols={[react, firebase]}
           link={"/backpacking-buddies"}
@@ -53,8 +55,8 @@ const Projects = () => {
       </div>
       <div data-aos="fade">
         <Project
-          title="Wordpress E-Commerce"
-          img={services}
+          title="Personal Blog"
+          img={blog}
           symbols={[wordpress, jquery, sass]}
           link={"/backpacking-buddies"}
         />

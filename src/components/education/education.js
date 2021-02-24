@@ -27,6 +27,8 @@ const Education = () => {
           <li>2 years Wordpress</li>
           <li>1 year ReactJs</li>
         </ul>
+        <p className="title">Background:</p>
+        <p>I have spent the last 2 years teaching myself how to code which includes networking and creating my own projects as a way to jumpstart my career</p>
       </div>
     </div>
   );
