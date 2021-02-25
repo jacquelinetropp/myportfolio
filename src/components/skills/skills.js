@@ -22,6 +22,8 @@ import photoshop from "../../images/photoshop.png";
 import lightroom from "../../images/lightroom.png";
 import premiere from "../../images/premiere.png";
 import express from "../../images/express.svg";
+import reactboot from '../../images/bootstrapreact.svg';
+import bootstrap from '../../images/bootstrap.png';
 
 import "./skills.styles.scss";
 
@@ -41,7 +43,9 @@ const Skills = () => {
       <SkillsCard image={react} text="React" />
       <SkillsCard image={wordpress} text="Wordpress" />
       <SkillsCard image={sass} text="Sass" />
+      <SkillsCard image={bootstrap} text="Bootstrap" />
       <SkillsCard image={materialui} text="Material UI" />
+      <SkillsCard image={reactboot} text="React Bootstrap" />
 
       <SkillsCard image={firebase} text="Firebase" />
       <SkillsCard image={node} text="NodeJS" />
