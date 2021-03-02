@@ -34,10 +34,10 @@ class Header extends React.Component {
             <NavLink to="/#services">Services</NavLink>
           </li>
           <li className="nav-link">
-            <a href="/">Projects</a>
+            <a href="/#projects">Projects</a>
           </li>
           <li className="nav-link">
-            <a href="/">Contact Me</a>
+            <a href="/#contact">Contact Me</a>
           </li>
         </ul>
       </div>

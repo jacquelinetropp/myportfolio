@@ -18,12 +18,12 @@ const BackpackingBuddies = () => {
     <PortfolioProject
       headerImg={headerImg}
       title="Backpacking Buddies"
-      description="A social media app with the idea of connecting travalers"
-      techs={[react, materialui, firebase, node, express]}
-      github="/"
-      demo="/"
-      highlight1_title="Styling and Redux"
-      highlight1_text="The styling of the website is designed to have a boho minimalistic style to match the target audience. Yellow and cream colors were used to evoke happiness and remind people of nature. Blue was used for evoke calmness. Social media can cause stress so the blue is to help alleviate that. Redux and Thunk were used to create a "
+      description="A social media app with the idea of connecting travelers"
+      techs={[react, firebase, node, express]}
+      github="https://github.com/jacquelinetropp/ultimateplanner2"
+      demo="https://ultimateplanner.herokuapp.com/"
+      highlight1_title="About The App"
+      highlight1_text="The styling of the website is designed to have a galaxy feel. There is no  Yellow and cream colors were used to evoke happiness and remind people of nature. Blue was used for evoke calmness. Social media can cause stress so the blue is to help alleviate that. Redux and Thunk were used to create a "
       highlight2_title="Firebase Functions"
       highlight2_text="The back-end of this application was used building firebase functions. The firebase functions allowed me to have more control over the functionality and is formatted so more functions can be added with ease. I was able to use the express library to build on my skillset with more programs besides MongoDb. "
     />

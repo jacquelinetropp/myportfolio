@@ -70,8 +70,8 @@ class ContactForm extends React.PureComponent {
     const { name, email, subject, message, sentMessage } = this.state;
 
     return (
-      <Fragment>
-        <div className="contact">
+      <Fragment >
+        <div className="contact" id="contact">
           <h2>Let's Talk!</h2>
           <div className="contactbox">
             <div className="formbox">

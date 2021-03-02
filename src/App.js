@@ -8,6 +8,10 @@ import "./App.css";
 import Home from "./pages/Home";
 import ContactForm from "./components/contact/contact";
 import BackpackingBuddies from "./pages/BackpackingBuddies";
+import UltimatePlanner from "./pages/UltimatePlanner";
+import CovidVaccine from "./pages/CovidVaccine";
+import OnlineTraining from "./pages/OnlineTraining";
+import PersonalBlog from "./pages/PersonalBlog";
 
 function App() {
   return (
@@ -20,6 +24,26 @@ function App() {
           path="/backpacking-buddies"
           component={BackpackingBuddies}
         />
+        <Route
+          exact
+          path="/ultimate-planner"
+          component={UltimatePlanner}
+        />
+        <Route
+        exact
+        path="/vaccine-toolkit"
+        component={CovidVaccine}
+      />
+      <Route
+      exact
+      path="/online-training"
+      component={OnlineTraining}
+    />
+    <Route
+    exact
+    path="/personal-blog"
+    component={PersonalBlog}
+  />
       </Switch>
       <ContactForm />
     </Fragment>

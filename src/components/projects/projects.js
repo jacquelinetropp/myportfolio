@@ -52,7 +52,7 @@ const Projects = () => {
           title="DFA Vaccine Toolkit"
           img={dfa}
           symbols={[wordpress, sass, jquery]}
-          link={"/backpacking-buddies"}
+          link={"/vaccine-toolkit"}
         />
       </div>
       <div data-aos="fade">
@@ -60,7 +60,7 @@ const Projects = () => {
           title="Planner App"
           img={planner}
           symbols={[react, firebase]}
-          link={"/backpacking-buddies"}
+          link={"/ultimate-planner"}
         />
       </div>
       <div data-aos="fade">
@@ -68,7 +68,7 @@ const Projects = () => {
         title="Online Training"
         img={planner}
         symbols={[react, firebase, reactboot]}
-        link={"/backpacking-buddies"}
+        link={"/online-training"}
       />
     </div>
       <div data-aos="fade">
@@ -76,7 +76,7 @@ const Projects = () => {
           title="Personal Blog"
           img={blog}
           symbols={[wordpress, jquery, sass]}
-          link={"/backpacking-buddies"}
+          link={"/personal-blog"}
         />
       </div>
     </div>

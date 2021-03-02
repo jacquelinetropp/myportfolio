@@ -23,12 +23,12 @@ const Education = () => {
         </div>
         <p className="title">Experience:</p>
         <ul>
-          <li>2 years Javascript</li>
-          <li>2 years Wordpress</li>
-          <li>1 year ReactJs</li>
+          <li>3 years Javascript</li>
+          <li>3 years Wordpress</li>
+          <li>2 year ReactJs</li>
         </ul>
         <p className="title">Background:</p>
-        <p>I have spent the last 2 years teaching myself how to code which includes networking and creating my own projects as a way to jumpstart my career</p>
+        <p>I have spent the last 3 years teaching myself how to code which includes networking and creating my own projects as a way to jumpstart my career</p>
       </div>
     </div>
   );
