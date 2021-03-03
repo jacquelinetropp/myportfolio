@@ -20,8 +20,8 @@ const BackpackingBuddies = () => {
       title="Backpacking Buddies"
       description="A social media app with the idea of connecting travelers"
       techs={[react, firebase, node, express]}
-      github="https://github.com/jacquelinetropp/ultimateplanner2"
-      demo="https://ultimateplanner.herokuapp.com/"
+      github="https://github.com/jacquelinetropp/backpackingbuddies-client"
+      demo="https://backpacking-buddies.herokuapp.com/"
       highlight1_title="About The App"
       highlight1_text="The styling of the website is designed to have a galaxy feel. There is no  Yellow and cream colors were used to evoke happiness and remind people of nature. Blue was used for evoke calmness. Social media can cause stress so the blue is to help alleviate that. Redux and Thunk were used to create a "
       highlight2_title="Firebase Functions"

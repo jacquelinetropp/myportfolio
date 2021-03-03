@@ -20,8 +20,8 @@ const UltimatePlanner = () => {
       title="Ultimate Planner"
       description="A project managing task app to keep projects organized"
       techs={[react, firebase]}
-      github="/"
-      demo="/"
+      github="https://github.com/jacquelinetropp/ultimateplanner2"
+      demo="https://ultimateplanner.herokuapp.com/"
       highlight1_title="About This App"
       highlight1_text="This galaxy-themed project task manager was designed for organizing projects. Create a project, then create tasks for each project. Once a project is completed, you can delete the whole project which deletes all the tasks related to that program!"
       highlight2_title="React Redux Firebase "
