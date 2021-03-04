@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import PortfolioProject from "../components/portfoliopage/portfolioPage";
 
-import headerImg from "../images/heart.png";
+import headerImg from "../images/1200dfa.png";
 import jquery from '../images/jquery.png';
 import wordpress from '../images/wordpress.png';
 import sass from '../images/sass.png';

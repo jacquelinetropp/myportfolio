@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import PortfolioProject from "../components/portfoliopage/portfolioPage";
 
-import headerImg from "../images/heart.png";
+import headerImg from "../images/1200planner.png";
 import firebase from "../images/firebase.png";
 import node from "../images/node.png";
 import react from "../images/react.png";

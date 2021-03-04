@@ -27,6 +27,7 @@ import dfa from "../../images/1200dfa.png";
 import blog from "../../images/1200blog.png";
 import planner from '../../images/1200planner.png';
 import backpacking from '../../images/1200backpacking.png';
+import training from '../../images/1200training.png';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -66,7 +67,7 @@ const Projects = () => {
       <div data-aos="fade">
       <Project
         title="Online Training"
-        img={planner}
+        img={training}
         symbols={[react, firebase, reactboot]}
         link={"/online-training"}
       />

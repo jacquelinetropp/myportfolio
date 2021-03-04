@@ -8,6 +8,8 @@ import node from "../images/node.png";
 import react from "../images/react.png";
 import materialui from "../images/materialui.png";
 
+import image from '../images/1200backpacking.png';
+
 import express from "../images/express.svg";
 
 const BackpackingBuddies = () => {
@@ -16,10 +18,10 @@ const BackpackingBuddies = () => {
   });
   return (
     <PortfolioProject
-      headerImg={headerImg}
+      headerImg={image}
       title="Backpacking Buddies"
       description="A social media app with the idea of connecting travelers"
-      techs={[react, firebase, node, express]}
+      techs={[react, firebase, node, express, materialui]}
       github="https://github.com/jacquelinetropp/backpackingbuddies-client"
       demo="https://backpacking-buddies.herokuapp.com/"
       highlight1_title="About The App"
