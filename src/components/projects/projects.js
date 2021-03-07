@@ -33,6 +33,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import "./projects.styles.scss";
+import Featured from "../featured/featured";
 const Projects = () => {
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
@@ -40,6 +41,15 @@ const Projects = () => {
   return (
     <div className="projects" id="projects">
       <h2>Projects</h2>
+      <div data-aos="fade" className="projects__featured">
+        <Featured 
+        testimonial='"Jacqueline was instrumental in getting the Doctors for America Covid Vaccine FAQ Toolkit built and published. She was very easy to work with and worked hard to understand our needs in this project thoroughly. Her implementation of WordPress and use of various necessary plug-ins to help the site come to fruition, was done professionally and in a timely manner. We are absolutely looking forward to working with Jacqueline on future projects."'
+        author="- Candy Tai, Doctors For America" 
+        title="DFA Vaccine Toolkit"
+        img={dfa}
+        symbols={[wordpress, sass, jquery]}
+        link={"/vaccine-toolkit"}/>
+      </div>
       <div data-aos="fade">
         <Project
           title="Backpacking Buddies"
@@ -48,17 +58,10 @@ const Projects = () => {
           link={"/backpacking-buddies"}
         />
       </div>
+      
       <div data-aos="fade">
         <Project
-          title="DFA Vaccine Toolkit"
-          img={dfa}
-          symbols={[wordpress, sass, jquery]}
-          link={"/vaccine-toolkit"}
-        />
-      </div>
-      <div data-aos="fade">
-        <Project
-          title="Planner App"
+          title="Ultimate Planner"
           img={planner}
           symbols={[react, firebase]}
           link={"/ultimate-planner"}
@@ -66,7 +69,7 @@ const Projects = () => {
       </div>
       <div data-aos="fade">
       <Project
-        title="Online Training"
+        title="FuncMove"
         img={training}
         symbols={[react, firebase, reactboot]}
         link={"/online-training"}

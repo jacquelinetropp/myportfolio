@@ -17,6 +17,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+  &__featured {
+    grid-column: 1/-1;
+  }
 }
 
 .project {
