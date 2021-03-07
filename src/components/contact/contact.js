@@ -7,13 +7,13 @@ import "./contact.styles.scss";
 
 import {
   Field,
-  Label,
+
   Control,
-  Input,
+
   Button,
-  Icon,
+
   Textarea,
-  Notification,
+
 } from "rbx";
 
 class ContactForm extends React.PureComponent {
@@ -67,7 +67,7 @@ class ContactForm extends React.PureComponent {
   }
 
   render() {
-    const { name, email, subject, message, sentMessage } = this.state;
+    const { name, email, subject, message } = this.state;
 
     return (
       <Fragment >
