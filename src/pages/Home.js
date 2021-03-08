@@ -8,10 +8,12 @@ import Projects from "../components/projects/projects";
 const Home = () => (
   <Fragment>
     <Intro />
+    <Projects />
+    <Services />
     <Education />
     <Skills id="skills" />
-    <Services />
-    <Projects />
+  
+
   </Fragment>
 );
 

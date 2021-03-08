@@ -33,7 +33,9 @@
          display: flex;
          justify-content: center;
       img {
-          width: 15%;
+          width: 30px;
+          height: 30px;
+          max-height: 100%;
       }
      }
   }
