@@ -22,7 +22,7 @@ const Intro = () => {
             websites
           </h6>
           <p>
-            Utilizing the latest trends and techologies, I craft customized
+            Utilizing the latest trends and technologies, I craft customized
             websites for companies and individuals. I am currently seeking a
             front-end team to be a part of.
           </p>
