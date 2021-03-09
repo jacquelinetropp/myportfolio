@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import ContactForm from "./components/contact/contact";
 
 
-import UltimatePlanner from "./pages/UltimatePlanner";
+const UltimatePlanner = React.lazy(() =>  import("./pages/UltimatePlanner"));
 const CovidVaccine = React.lazy(() =>  import("./pages/CovidVaccine"));
 const OnlineTraining = React.lazy(() =>  import("./pages/OnlineTraining"));
 const PersonalBlog = React.lazy(() =>  import("./pages/PersonalBlog"));
@@ -21,7 +21,7 @@ function App() {
     <Fragment>
       <Header />
       <Switch>
-        <Suspense>
+        <Suspense fallback={<div>Loading</div>}>
           <Route exact path="/" component={Home} />
           <Route
             exact
