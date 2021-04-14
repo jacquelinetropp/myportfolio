@@ -15,6 +15,7 @@ const CovidVaccine = React.lazy(() =>  import("./pages/CovidVaccine"));
 const OnlineTraining = React.lazy(() =>  import("./pages/OnlineTraining"));
 const PersonalBlog = React.lazy(() =>  import("./pages/PersonalBlog"));
 const BackpackingBuddies = React.lazy(() => import("./pages/BackpackingBuddies"));
+const WeatherTracking = React.lazy(() => import("./pages/Weather"));
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/vaccine-toolkit" component={CovidVaccine} />
           <Route exact path="/online-training" component={OnlineTraining} />
           <Route exact path="/personal-blog" component={PersonalBlog} />
+          <Route exact path ="/weather" component={WeatherTracking} />
         </Suspense>
         
       </Switch>
