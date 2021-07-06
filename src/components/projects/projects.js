@@ -17,6 +17,7 @@ import planner from "../../images/1200planner.png";
 import backpacking from "../../images/1200backpacking.png";
 import training from "../../images/1200training.png";
 import weather from "../../images/1200weather.png";
+import primeplanner from '../../images/1200prime.png';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -40,6 +41,14 @@ const Projects = () => {
           link={"/vaccine-toolkit"}
         />
       </div>
+      <div data-aos="fade">
+      <Project
+        title="Prime Planner"
+        img={primeplanner}
+        symbols={[react, firebase]}
+        link={"/prime-planner"}
+      />
+    </div>
       <div data-aos="fade">
         <Project
           title="Backpacking Buddies"
@@ -73,14 +82,7 @@ const Projects = () => {
         link={"/weather"}
       />
     </div>
-      <div data-aos="fade">
-        <Project
-          title="Personal Blog"
-          img={blog}
-          symbols={[wordpress, jquery, sass]}
-          link={"/personal-blog"}
-        />
-      </div>
+     
     </div>
   );
 };

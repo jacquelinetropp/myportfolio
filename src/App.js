@@ -3,7 +3,6 @@ import { Switch, Route } from "react-router-dom";
 
 import Header from "./components/header/header";
 
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 
@@ -16,6 +15,7 @@ const OnlineTraining = React.lazy(() =>  import("./pages/OnlineTraining"));
 const PersonalBlog = React.lazy(() =>  import("./pages/PersonalBlog"));
 const BackpackingBuddies = React.lazy(() => import("./pages/BackpackingBuddies"));
 const WeatherTracking = React.lazy(() => import("./pages/Weather"));
+const PrimePlanner = React.lazy(() => import('./pages/PrimePlanner'));
 
 function App() {
   return (
@@ -33,6 +33,7 @@ function App() {
           <Route exact path="/vaccine-toolkit" component={CovidVaccine} />
           <Route exact path="/online-training" component={OnlineTraining} />
           <Route exact path="/personal-blog" component={PersonalBlog} />
+          <Route exact path="/prime-planner" component={PrimePlanner} />
           <Route exact path ="/weather" component={WeatherTracking} />
         </Suspense>
         
