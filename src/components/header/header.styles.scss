@@ -1,8 +1,20 @@
 .navbar {
   font-size: 18px;
   margin-bottom: -20px;
-  background-image: url(../../images/background.jpg);
+  position: fixed;
+  top:0;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    height: 70px;
+    padding: 10px;
+  }
 }
 
 img {
@@ -16,7 +28,6 @@ img {
 
 .main-nav {
   list-style: none;
-  margin-top: -50px;
   margin-bottom: 10px;
 }
 
@@ -42,13 +53,14 @@ img {
 }
 
 .toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  order: 3;
+  align-self: flex-start;
   cursor: pointer;
   background-color: transparent;
   border: none;
   font-size: 40px;
+  padding-top: 10px;
+
 
   &:focus {
     outline: none;
@@ -64,15 +76,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 0;
-    height: 70px;
-    background-image: url(../../images/background.jpg);
-    padding: 10px;
-  }
 
   .main-nav {
     display: flex;

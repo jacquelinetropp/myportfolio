@@ -17,8 +17,8 @@ h2 {
   /* background-image: linear-gradient(to right, #0fbab4, #78559e);
   background-clip: text;
   color: transparent; */
-  color:rgba(15, 186, 180, 0.8);
-  -webkit-text-stroke: 1px white;
+  /* color:rgba(15, 186, 180, 0.8);
+  -webkit-text-stroke: 1px white; */
   letter-spacing: 4px;
   margin: 10px 0;
 }
@@ -26,6 +26,12 @@ h2 {
 @media only screen and (max-width: 450px) {
   h2 {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  h2 {
+    font-size: 35px;
   }
 }
 

@@ -1,0 +1,11 @@
+.main {
+    position: relative;
+   
+}
+
+.main__img {
+    background-image: url(./images/beach-sm.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,43 @@
+.about {
+  background-color: #A2EDF4;
+  margin-top: -15px;
+  padding: 5rem 2rem;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 768px){
+      grid-template-columns: 1fr;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__second {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+  }
+
+  &__imgbox {
+   grid-column: 1/-1;
+   place-self: center;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+    img {
+      width: 75%;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+
+      @media screen and (max-width: 768px){
+        width: 55%;
+    }
+    }
+  }
+}

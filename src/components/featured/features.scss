@@ -39,4 +39,19 @@
       }
      }
   }
+
+  &__links {
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: center;
+  
+      &__link {
+        margin: .2rem;
+        padding: .5rem 1rem;
+        border: 2px solid #A2EDF4;
+  
+        &:hover {
+        background-color: #A2EDF4; }
+      }
+    }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import logo from "../../images/blacklogo.png";
 
-import "./header.styles.scss";
+import "./header1.styles.scss";
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {

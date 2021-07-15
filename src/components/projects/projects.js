@@ -38,7 +38,8 @@ const Projects = () => {
           title="DFA Vaccine Toolkit"
           img={dfa}
           symbols={[wordpress, sass, jquery]}
-          link={"/vaccine-toolkit"}
+          github="https://github.com/jacquelinetropp/vaccinetoolkit"
+          demo="https://www.drsforamerica.org/covid-vaccine-toolkit/"
         />
       </div>
       <div data-aos="fade">
@@ -46,7 +47,9 @@ const Projects = () => {
         title="Prime Planner"
         img={primeplanner}
         symbols={[react, firebase]}
-        link={"/prime-planner"}
+        description="An all inclusive project planner with a budget, workout, and chore tracker"
+        github={"https://github.com/jacquelinetropp/primeplanner"}
+        demo={"https://primeplanner.herokuapp.com/"}
       />
     </div>
       <div data-aos="fade">
@@ -54,7 +57,9 @@ const Projects = () => {
           title="Backpacking Buddies"
           img={backpacking}
           symbols={[react, materialui, firebase, node, express]}
-          link={"/backpacking-buddies"}
+          description="A social media built with the traveler in mind"
+          github="https://github.com/jacquelinetropp/backpackingbuddies-client"
+          demo="https://backpacking-buddies.herokuapp.com/"
         />
       </div>
 
@@ -63,7 +68,9 @@ const Projects = () => {
           title="Ultimate Planner"
           img={planner}
           symbols={[react, firebase]}
-          link={"/ultimate-planner"}
+          description="A project managing app to keep projects organized"
+          demo="https://ultimateplanner.herokuapp.com/"
+          github="https://github.com/jacquelinetropp/ultimateplanner2"
         />
       </div>
       <div data-aos="fade">
@@ -71,7 +78,9 @@ const Projects = () => {
           title="FuncMove"
           img={training}
           symbols={[react, firebase, reactboot]}
-          link={"/online-training"}
+          description="An e-commerce app built for personal training"
+          github="https://github.com/jacquelinetropp/online-training"
+          demo="https://funcmove.herokuapp.com/"
         />
       </div>
       <div data-aos="fade">
@@ -79,7 +88,9 @@ const Projects = () => {
         title="Weather Dashboard"
         img={weather}
         symbols={[react]}
-        link={"/weather"}
+        description="An app built to see the current weather, 7 day, and 48hr forecase"
+        github="https://github.com/jacquelinetropp/weathertracker"
+        demo="https://weather-tracking-tropp.herokuapp.com/"
       />
     </div>
      
